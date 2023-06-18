@@ -1,0 +1,14 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-weight: 700;
+}
+.header {
+    background-image:linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero-box {
+    height: 80vh;
+}
