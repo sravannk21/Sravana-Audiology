@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap"
+        rel="stylesheet">
     <link href="./src/vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="./src/vendors/fontawesome/css/solid.css" rel="stylesheet">
     <link href="./src/vendors/fontawesome/css/brands.css" rel="stylesheet">
@@ -18,49 +20,38 @@
 </head>
 
 <body class="dark:bg-gray-800 dark:text-white">
-    <header class="max-w-full mx-auto bg-white z-10 text-black p-6 header min-h-screen">
-        <section class="max-w-7xl mx-auto bg-white p-8 items-center justify-between flex">
-            <h1 class="font-medium text-3xl uppercase">Sravana</h1>
-            <div class="max-w-7xl">
-                <button id="mobile-open-button" class="focus:outline-none text-4xl hover:opacity-40 md:hidden relative">
-                    &#9776;
-                </button>
-                <nav class="hidden md:block text-xl capitalize space-x-8" aria-label="main">
-                    <a href="#" class="hover:opacity-60">Home</a>
-                    <a href="#" class="hover:opacity-60">about</a>
-                    <a href="#" class="hover:opacity-60">departments</a>
-                    <a href="#" class="hover:opacity-60">doctors</a>
-                    <a href="#" class="hover:opacity-60">services</a>
-                    <a href="#" class="hover:opacity-60">locations</a>
-                    <a href="#" class="hover:opacity-60">contact</a>
-                </nav>
+    <header class="max-w-full mx-auto bg-white z-10 text-black header min-h-screen">
+        <nav class="max-w-7xl mx-auto p-5 bg-white text-black shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <img class="h-10 inline"
+                  src="./build/img/logo.jpg">
+              </span>
+        
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
             </div>
-        </section>
-
-        <section class="bg-black justify-center flex-col text-5xl hidden max-w-7xl">
-            <div class="max-w-7xl mx-auto">
-                <button class="w-full mx-auto text-right text-white pr-8 text-6xl">
-                    &times;
-                </button>
-                <nav class="min-h-screen flex flex-col items-center">
-                    <a href=""
-                        class="w-full text-3xl text-center py-6 hover:opacity-90 text-black dark:text-white">Home</a>
-                    <a href=""
-                        class="w-full text-3xl text-center py-6 hover:opacity-90 text-black dark:text-white capitalize">about</a>
-                    <a href=""
-                        class="w-full text-3xl text-center py-6 hover:opacity-90 text-black dark:text-white capitalize">departments</a>
-                    <a href=""
-                        class="w-full text-3xl text-center py-6 hover:opacity-90 text-black dark:text-white capitalize">doctors</a>
-                    <a href=""
-                        class="w-full text-3xl text-center py-6 hover:opacity-90 text-black dark:text-white capitalize">services</a>
-                    <a href=""
-                        class="w-full text-3xl text-center py-6 hover:opacity-90 text-black dark:text-white capitalize">locations</a>
-                    <a href=""
-                        class="w-full text-3xl text-center py-6 hover:opacity-90 text-black dark:text-white capitalize">contact</a>
-                </nav>
-            </div>
-        </section>
-        <section class="flex justify-center hero-box">
+        
+            <ul class="md:flex md:items-center z-[9] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500 capitalize">Home</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500 capitalize">about</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500 capitalize">products</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500 capitalize">services</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500 capitalize">contact</a>
+              </li>
+            </ul>
+          </nav>
+        <section class="flex justify-center h-[90vh]">
             <div class="my-auto">
                 <h1 class="text-white text-4xl md:text-6xl text-center">Medical Services you can trust</h1>
                 <p class="text-neutral-200 my-5 max-w-3xl mx-auto text-center md:text-xl">Lorem ipsum dolor sit amet
@@ -91,7 +82,8 @@
                         <i class="fa-solid fa-user-doctor text-4xl py-4 px-6 text-white bg-blue-500 rounded-lg"></i>
                     </div>
                     <div class="inline-block">
-                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional Doctors
+                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional
+                            Doctors
                         </h3>
                         <p class="text-gray-700 dark:text-white text-base ml-0 sm:ml-7 pt-1">
                             Donec odio.Quisque volutpat
@@ -103,7 +95,8 @@
                         <i class="fa-solid fa-user-doctor text-4xl py-4 px-6 text-white bg-blue-500 rounded-lg"></i>
                     </div>
                     <div class="inline-block">
-                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional Doctors
+                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional
+                            Doctors
                         </h3>
                         <p class="text-gray-700 dark:text-white text-base ml-0 sm:ml-7 pt-1">
                             Donec odio.Quisque volutpat
@@ -115,7 +108,8 @@
                         <i class="fa-solid fa-user-doctor text-4xl py-4 px-6 text-white bg-blue-500 rounded-lg"></i>
                     </div>
                     <div class="inline-block">
-                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional Doctors
+                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional
+                            Doctors
                         </h3>
                         <p class="text-gray-700 dark:text-white text-base ml-0 sm:ml-7 pt-1">
                             Donec odio.Quisque volutpat
@@ -127,7 +121,8 @@
                         <i class="fa-solid fa-user-doctor text-4xl py-4 px-6 text-white bg-blue-500 rounded-lg"></i>
                     </div>
                     <div class="inline-block">
-                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional Doctors
+                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional
+                            Doctors
                         </h3>
                         <p class="text-gray-700 dark:text-white text-base ml-0 sm:ml-7 pt-1">
                             Donec odio.Quisque volutpat
@@ -139,7 +134,8 @@
                         <i class="fa-solid fa-user-doctor text-4xl py-4 px-6 text-white bg-blue-500 rounded-lg"></i>
                     </div>
                     <div class="inline-block">
-                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional Doctors
+                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional
+                            Doctors
                         </h3>
                         <p class="text-gray-700 dark:text-white text-base ml-0 sm:ml-7 pt-1">
                             Donec odio.Quisque volutpat
@@ -151,7 +147,8 @@
                         <i class="fa-solid fa-user-doctor text-4xl py-4 px-6 text-white bg-blue-500 rounded-lg"></i>
                     </div>
                     <div class="inline-block">
-                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional Doctors
+                        <h3 class="text-black dark:text-blue-500 text-2xl font-semibold ml-0 sm:ml-7 mt-10">Professional
+                            Doctors
                         </h3>
                         <p class="text-gray-700 dark:text-white text-base ml-0 sm:ml-7 pt-1">
                             Donec odio.Quisque volutpat
@@ -195,34 +192,43 @@
             <div class="max-w-7xl mx-auto p-6">
                 <h2 class="text-4xl font-medium capitalize lg:w-1/2 leading-relaxed">Our best Doctors</h2>
                 <div class="w-40 h-0.5 bg-blue-500 block text-white mt-5"></div>
-                <p class="py-8 text-gray-700 dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="py-8 text-gray-700 dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
                 <div class="owl-one owl-carousel">
                     <li class="list-none p-4 text-center">
-                        <img src="./build/img/doctor.jpg"/>
+                        <img src="./build/img/doctor.jpg" />
                         <p class="text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Name of Doctor</p>
                         <p class="pt-3 text-gray-400">Position of doctor</p>
-                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. </p>
                     </li>
                     <li class="list-none p-4 text-center">
-                        <img src="./build/img/doctor.jpg"/>
+                        <img src="./build/img/doctor.jpg" />
                         <p class="text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Name of Doctor</p>
                         <p class="pt-3 text-gray-400">Position of doctor</p>
-                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </li><li class="list-none p-4 text-center">
-                        <img src="./build/img/doctor.jpg"/>
+                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. </p>
+                    </li>
+                    <li class="list-none p-4 text-center">
+                        <img src="./build/img/doctor.jpg" />
                         <p class="text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Name of Doctor</p>
                         <p class="pt-3 text-gray-400">Position of doctor</p>
-                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </li><li class="list-none p-4 text-center">
-                        <img src="./build/img/doctor.jpg"/>
+                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. </p>
+                    </li>
+                    <li class="list-none p-4 text-center">
+                        <img src="./build/img/doctor.jpg" />
                         <p class="text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Name of Doctor</p>
                         <p class="pt-3 text-gray-400">Position of doctor</p>
-                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </li><li class="list-none p-4 text-center">
-                        <img src="./build/img/doctor.jpg"/>
+                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. </p>
+                    </li>
+                    <li class="list-none p-4 text-center">
+                        <img src="./build/img/doctor.jpg" />
                         <p class="text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Name of Doctor</p>
                         <p class="pt-3 text-gray-400">Position of doctor</p>
-                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p class="pt-3 text-black dark:text-gray-400 text-center">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. </p>
                     </li>
                 </div>
             </div>
@@ -232,7 +238,7 @@
         <section class="max-w-full my-20">
             <div class="mx-auto flex md:columns-2 gap-x-10">
                 <div class="w-full hidden lg:block">
-                    <img src="./build/img/service-bg.jpg"/>
+                    <img src="./build/img/service-bg.jpg" />
                 </div>
                 <div class="w-full lg:block my-auto">
                     <h2 class="text-4xl font-medium capitalize lg:w-1/2 leading-relaxed">Our Services</h2>
@@ -240,51 +246,87 @@
                     <p class="py-8 text-gray-700 dark:text-white">Lorem ipsum dolor sit amet.</p>
                     <div class="columns-2 gap-7 my-5">
                         <div class="w-full">
-                            <span><h1 class="font-medium text-4xl text-blue-500 inline-block">01</h1></span>
-                            <span><h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Cardiothoracic Surgery</h1>
+                            <span>
+                                <h1 class="font-medium text-4xl text-blue-500 inline-block">01</h1>
+                            </span>
+                            <span>
+                                <h1
+                                    class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">
+                                    Cardiothoracic Surgery</h1>
                             </span>
                             <p class="text-gray-400 text-lg my-8 inline-block">
-                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                                consequat.
                             </p>
                         </div>
                         <div class="w-full">
-                            <span><h1 class="font-medium text-4xl text-blue-500 inline-block">02</h1></span>
-                            <span><h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Cardiothoracic Surgery</h1>
+                            <span>
+                                <h1 class="font-medium text-4xl text-blue-500 inline-block">02</h1>
+                            </span>
+                            <span>
+                                <h1
+                                    class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">
+                                    Cardiothoracic Surgery</h1>
                             </span>
                             <p class="text-gray-400 text-lg my-8 inline-block">
-                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                                consequat.
                             </p>
                         </div>
                         <div class="w-full">
-                            <span><h1 class="font-medium text-4xl text-blue-500 inline-block">03</h1></span>
-                            <span><h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Cardiothoracic Surgery</h1>
+                            <span>
+                                <h1 class="font-medium text-4xl text-blue-500 inline-block">03</h1>
+                            </span>
+                            <span>
+                                <h1
+                                    class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">
+                                    Cardiothoracic Surgery</h1>
                             </span>
                             <p class="text-gray-400 text-lg my-8 inline-block">
-                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                                consequat.
                             </p>
                         </div>
                         <div class="w-full">
-                            <span><h1 class="font-medium text-4xl text-blue-500 inline-block">04</h1></span>
-                            <span><h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Cardiothoracic Surgery</h1>
+                            <span>
+                                <h1 class="font-medium text-4xl text-blue-500 inline-block">04</h1>
+                            </span>
+                            <span>
+                                <h1
+                                    class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">
+                                    Cardiothoracic Surgery</h1>
                             </span>
                             <p class="text-gray-400 text-lg my-8 inline-block">
-                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                                consequat.
                             </p>
                         </div>
                         <div class="w-full">
-                            <span><h1 class="font-medium text-4xl text-blue-500 inline-block">05</h1></span>
-                            <span><h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Cardiothoracic Surgery</h1>
+                            <span>
+                                <h1 class="font-medium text-4xl text-blue-500 inline-block">05</h1>
+                            </span>
+                            <span>
+                                <h1
+                                    class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">
+                                    Cardiothoracic Surgery</h1>
                             </span>
                             <p class="text-gray-400 text-lg my-8 inline-block">
-                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                                consequat.
                             </p>
                         </div>
                         <div class="w-full">
-                            <span><h1 class="font-medium text-4xl text-blue-500 inline-block">06</h1></span>
-                            <span><h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">Cardiothoracic Surgery</h1>
+                            <span>
+                                <h1 class="font-medium text-4xl text-blue-500 inline-block">06</h1>
+                            </span>
+                            <span>
+                                <h1
+                                    class="inline-block text-2xl font-semibold capitalize pt-4 text-black dark:text-white">
+                                    Cardiothoracic Surgery</h1>
                             </span>
                             <p class="text-gray-400 text-lg my-8 inline-block">
-                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                                consequat.
                             </p>
                         </div>
                     </div>
@@ -298,20 +340,29 @@
                 <h2 class="text-4xl font-medium capitalize leading-relaxed">What Our Customers Say</h2>
                 <div class="owl-two owl-carousel owl-theme text-center">
                     <figure>
-                        <img src="./build/img/testimonial-user.jpg" class="max-w-fit rounded-full mx-auto my-5"/>
-                        <p class="text-white leading-relaxed italic text-lg max-w-full mx-5">“ Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. ”</p>
+                        <img src="./build/img/testimonial-user.jpg" class="max-w-fit rounded-full mx-auto my-5" />
+                        <p class="text-white leading-relaxed italic text-lg max-w-full mx-5">“ Donec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                            pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod
+                            in, pharetra a, ultricies in, diam. Sed arcu. ”</p>
                         <h3 class="my-5 font-semibold">Customer name</h3>
                         <h3 class="font-thin">Place or company</h3>
                     </figure>
                     <figure>
-                        <img src="./build/img/testimonial-user.jpg" class="max-w-fit rounded-full mx-auto my-5"/>
-                        <p class="text-white leading-relaxed italic text-lg max-w-full mx-5">“ Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. ”</p>
+                        <img src="./build/img/testimonial-user.jpg" class="max-w-fit rounded-full mx-auto my-5" />
+                        <p class="text-white leading-relaxed italic text-lg max-w-full mx-5">“ Donec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                            pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod
+                            in, pharetra a, ultricies in, diam. Sed arcu. ”</p>
                         <h3 class="my-5 font-semibold">Customer name</h3>
                         <h3 class="font-thin">Place or company</h3>
                     </figure>
                     <figure>
-                        <img src="./build/img/testimonial-user.jpg" class="max-w-fit rounded-full mx-auto my-5"/>
-                        <p class="text-white leading-relaxed italic text-lg max-w-full mx-5">“ Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. ”</p>
+                        <img src="./build/img/testimonial-user.jpg" class="max-w-fit rounded-full mx-auto my-5" />
+                        <p class="text-white leading-relaxed italic text-lg max-w-full mx-5">“ Donec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                            pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod
+                            in, pharetra a, ultricies in, diam. Sed arcu. ”</p>
                         <h3 class="my-5 font-semibold">Customer name</h3>
                         <h3 class="font-thin">Place or company</h3>
                     </figure>
@@ -329,19 +380,24 @@
                         <form action="#" method="post">
                             <div class="md:columns-2">
                                 <div class="mb-10">
-                                    <input type="text" placeholder="Name" required class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white"/>
+                                    <input type="text" placeholder="Name" required
+                                        class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white" />
                                 </div>
                                 <div class="mb-10">
-                                    <input type="text" placeholder="Email" required class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white"/>
+                                    <input type="text" placeholder="Email" required
+                                        class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white" />
                                 </div>
                                 <div class="mb-10">
-                                    <input type="text" placeholder="Subject" required class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white"/>
+                                    <input type="text" placeholder="Subject" required
+                                        class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white" />
                                 </div>
                                 <div class="mb-10">
-                                    <input type="text" placeholder="Phone" required class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white"/>
+                                    <input type="text" placeholder="Phone" required
+                                        class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white" />
                                 </div>
                             </div>
-                            <textarea placeholder="Message" class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white h-52"></textarea>
+                            <textarea placeholder="Message"
+                                class="w-full p-4 bg-transparent border-solid border-2 border-blue-500 dark:border-white h-52"></textarea>
                             <div class="text-left mt-10">
                                 <a href="#"
                                     class="py-3 px-6 border border-blue-400 text-black hover:text-white dark:text-white text-xl capitalize hover:bg-blue-500 hover:border-transparent transition-all">Know
@@ -357,7 +413,8 @@
                                 </span>Our Address
                             </p>
                             <p class="text-gray-400 text-lg my-8 ml-3">
-                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras
+                                consequat.
                             </p>
                         </div>
                         <div class="phone">
@@ -389,45 +446,62 @@
 
         <!--MAP-->
         <section class="w-full">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.006674213686!2d75.35603157604125!3d12.043061188193382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43ff69ad2dff9%3A0xbb2163b0bbc29b61!2sSravana%20Hearing%20Aid%20Centre%20-%20Audiology%20%26%20Speech%20Therapy%20Clinic!5e0!3m2!1sen!2sin!4v1688291677309!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.006674213686!2d75.35603157604125!3d12.043061188193382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43ff69ad2dff9%3A0xbb2163b0bbc29b61!2sSravana%20Hearing%20Aid%20Centre%20-%20Audiology%20%26%20Speech%20Therapy%20Clinic!5e0!3m2!1sen!2sin!4v1688291677309!5m2!1sen!2sin"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <!--FOOTER-->
         <section class="w-full bg-gray-800 py-10">
             <div class="max-w-4xl mx-auto my-20 text-center">
-                <h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-white">Stay informed and healthy</h1>
+                <h1 class="inline-block text-2xl font-semibold capitalize pt-4 text-white">Stay informed and healthy
+                </h1>
                 <p class="text-gray-400 text-lg my-8">
                     Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
                 </p>
                 <div class="social-icons">
-                    <span><a href="#"><i class="fa-brands fa-facebook text-5xl hover:text-blue-500 p-4 text-white"></i></a></span>
-                    <span><a href="#"><i class="fa-brands fa-instagram text-5xl hover:text-blue-500 p-4 text-white"></i></a></span>
-                    <span><a href="#"><i class="fa-brands fa-whatsapp text-5xl hover:text-blue-500 p-4 text-white"></i></a></span>
+                    <span><a href="#"><i
+                                class="fa-brands fa-facebook text-5xl hover:text-blue-500 p-4 text-white"></i></a></span>
+                    <span><a href="#"><i
+                                class="fa-brands fa-instagram text-5xl hover:text-blue-500 p-4 text-white"></i></a></span>
+                    <span><a href="#"><i
+                                class="fa-brands fa-whatsapp text-5xl hover:text-blue-500 p-4 text-white"></i></a></span>
                 </div>
             </div>
             <div class="w-full h-px bg-gray-700">&nbsp;</div>
-            <p class="text-gray-400 text-lg mt-8 pb-3 text-center">&copy; Copyright 2023. "Sravana Hearing Aid Centre" by zero by one. All rights reserved.</p>
+            <p class="text-gray-400 text-lg mt-8 pb-3 text-center">&copy; Copyright 2023. "Sravana Hearing Aid Centre"
+                by zero by one. All rights reserved.</p>
         </section>
     </main>
     <script src="./src/vendors/owl-carousal/jquery-3.7.0.min.js"></script>
-<script src="./src/vendors/owl-carousal/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".owl-one").owlCarousel({
-            loop: true,
-            items: 3,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            responsiveClass: true,
-            responsive: {0: {items: 1},400: {items: 2},1000:{items:3}
-            }
+    <script src="./src/vendors/owl-carousal/owl.carousel.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-one").owlCarousel({
+                loop: true,
+                items: 3,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsiveClass: true,
+                responsive: {
+                    0: { items: 1 }, 400: { items: 2 }, 1000: { items: 3 }
+                }
+            });
+            $('.owl-two').owlCarousel({
+                items: 1,
+                autoplay: true,
+            })
         });
-        $('.owl-two').owlCarousel({
-            items: 1,
-            autoplay: true,
-        })
-});
-</script>
+    </script>
+    <script>
+        function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+    </script>
 </body>
 
 </html>
