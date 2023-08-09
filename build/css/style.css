@@ -534,20 +534,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.static {
-  position: static;
-}
-
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
-}
-
-.sticky {
-  position: sticky;
 }
 
 .left-0 {
@@ -562,32 +550,16 @@ video {
   top: 80px;
 }
 
-.start-auto {
-  inset-inline-start: auto;
-}
-
-.end-auto {
-  inset-inline-end: auto;
-}
-
-.start-5 {
-  inset-inline-start: 1.25rem;
-}
-
-.start-\[25\] {
-  inset-inline-start: 25;
-}
-
-.start-\[25\%\] {
-  inset-inline-start: 25%;
-}
-
 .z-10 {
   z-index: 10;
 }
 
 .z-\[9\] {
   z-index: 9;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .mx-2 {
@@ -731,22 +703,6 @@ video {
   width: 100%;
 }
 
-.min-w-full {
-  min-width: 100%;
-}
-
-.min-w-\[\] {
-  min-width: ;
-}
-
-.min-w-\[80\] {
-  min-width: 80;
-}
-
-.min-w-\[80\%\] {
-  min-width: 80%;
-}
-
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -776,9 +732,9 @@ video {
   list-style-type: none;
 }
 
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
+.columns-auto {
+  -moz-columns: auto;
+       columns: auto;
 }
 
 .grid-cols-1 {
@@ -803,10 +759,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
 }
 
 .gap-8 {
@@ -919,11 +871,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -939,10 +886,6 @@ video {
 
 .pt-1 {
   padding-top: 0.25rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
 }
 
 .pt-4 {
@@ -1002,10 +945,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .capitalize {
@@ -1123,11 +1062,6 @@ video {
     color: rgb(59 130 246 / var(--tw-text-opacity));
   }
 
-  .dark\:text-gray-400 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
-
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1154,6 +1088,10 @@ video {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {
